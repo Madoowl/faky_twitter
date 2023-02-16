@@ -1,3 +1,4 @@
+{% include "components/navbar.html.twig" %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,11 +13,19 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+        {% block navbar %}
+        {% endblock %}
     </head>
-    <body>
-      <h1 class="text-3xl font-bold underline">
+    <body class="bg-zinc-300">
+    <h1 class="text-3xl font-bold underline">
         Hello world!
-      </h1>
+    </h1>
+
+    <div class="flex gap-2">
+        <div class="flex-1 w-3/12 h-30 font-extrabold bg-orange-600">MENU</div>
+        <div class="flex-auto w-6/12 h-30 bg-red-400">CONTENTS</div>
+        <div class="flex-1 w-3/12 h-30 font-extrabold bg-green-400">TENDANCIES</div>
+    </div>
 {#        {% block body %}{% endblock %}#}
     </body>
 </html>
