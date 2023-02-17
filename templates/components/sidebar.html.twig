@@ -1,0 +1,32 @@
+{% block sidebar %}
+    <aside id="logo-sidebar" class="object-fill h-full transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <a href="" class="flex items-center pl-2.5 mb-5">
+                <img src="{{ asset('assets/icons/dog_icon_by_the_icon_z_iconscout.svg') }}" class="h-6 mr-3 sm:h-7" alt="Faky Twitter Logo" fill="current-color"/>
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Faky Twitter</span>
+            </a>
+            <ul class="space-y-2">
+                <li>
+                    <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="{{ asset('assets/icons/home_kmg_design_iconscout.svg') }}" class="h-6 mr-3 sm:h-7" alt="Faky Twitter Logo" fill="current-color"/>
+                        <span class="ml-3">Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="{{ asset('assets/icons/explore_laura_reen_iconscout.svg') }}" class="h-6 mr-3 sm:h-7" alt="Faky Twitter Logo" fill="current-color"/>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Explorer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="{{ asset('assets/icons/bell-history_by_lagot_design_iconscout.svg') }}" class="h-6 mr-3 sm:h-7" alt="Faky Twitter Logo" fill="current-color"/>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Notifications</span>
+                        <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+{% endblock %}
+
